@@ -1,0 +1,31 @@
+info:
+  name: generate token
+  type: http
+  seq: 5
+
+http:
+  method: post
+  url: https://aysha.erpgulf.com/api/method/employee_app.gauth.generate_token_secure
+  headers:
+    - name: content-type
+      value: application/x-www-form-urlencoded
+    - name: cookie
+      value: sid=Guest
+    - name: Cookie
+      value: sid=Guest
+  body:
+    type: form-urlencoded
+    data:
+      - name: api_key
+        value: aysha@gmail.com
+      - name: api_secret
+        value: Friday2000@T
+      - name: app_key
+        value: MzM1ZjdkMmUzMzgxNjM1NWJiNWQwYzE3YjY3YjMyZDU5N2E3ODRhZmE5NjU0N2RiMWVjZGE0ZjE4OGM1MmM1MQ==
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

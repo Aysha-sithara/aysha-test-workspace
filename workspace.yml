@@ -4,6 +4,10 @@ info:
   type: workspace
 
 collections:
+  - name: "Untitled Collection"
+    path: "collections/Untitled Collection"
+  - name: "Untitled Collection - 1"
+    path: "collections/Untitled Collection - 1"
 
 specs:
 
